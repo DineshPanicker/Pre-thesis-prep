@@ -1,1 +1,36 @@
-# (paste the .gitignore above here)
+# Build artifacts
+*.o
+*.ko
+*.deb
+*.tar.xz
+*.tar.gz
+vmlinux*
+System.map
+modules.*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Raw measurement files (regeneratable, large)
+*.hist
+cyclictest-*.log
+cyclictest-*.json
+stress-ng.log
+
+# Editor cruft
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Kernel source tree (if accidentally cloned inside)
+linux/
+linux-*/
